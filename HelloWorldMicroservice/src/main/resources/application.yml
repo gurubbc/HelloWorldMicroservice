@@ -1,0 +1,16 @@
+#Spring Properties
+#Microservice is going to be registred with this name
+
+spring:
+  application:
+    name: helloworld-microservice
+
+# Discovery related properties
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:4567/eureka/
+      
+# HTTP Server (Tomcat) port no
+server:
+  port: 4568
